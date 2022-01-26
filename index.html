@@ -27,7 +27,10 @@
         <img src="images/icon-moon.svg" alt="moon-icon" class="moon">
       </div>
       <div class="input">
-        <input type="text" id="to-do" class="to-do">
+        <form action="#">
+          <input type="text" id="to-do" class="to-do" placeholder="Add task" onkeypress="handle(event)">
+        </form>
+        <button class="add" id="add" onclick="addTask()">Add</button>
       </div>
     </div>
     <div class="to-do-list">

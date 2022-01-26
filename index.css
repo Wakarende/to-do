@@ -72,9 +72,13 @@ body{
   padding: 15px;
   border-radius: 5px;
   border: none;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
+.add{
+  margin: 20px 0px;
+  
+}
 .moon{
   margin-top: 10px;
   width: 30px;
@@ -172,3 +176,4 @@ hr{
     row-gap: 20px;
   }
 }
+
