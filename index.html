@@ -27,11 +27,38 @@
 </head>
 
 <body>
-  <h1 class="header-title">Todo</h1>
-  <input type="text" id="to-do" class="to-do">
-  <!-- Add dynamic number --> items left All Active Completed Clear Completed Drag and drop to reorder list <div
-    class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
-      Mentor</a>. Coded by <a href="#">Your Name Here</a>. </div>
+  <!-- Header  -->
+  <div class="header">
+    <div class="header-content">
+      <div class="header-flex">
+        <h1 class="header-title">TODO</h1>
+        <img src="images/icon-moon.svg" alt="moon-icon" class="moon">
+      </div>
+      <div class="input">
+        <input type="text" id="to-do" class="to-do">
+      </div>
+    </div>
+  </div>
+  <!-- Card  -->
+  <div class="card">
+    <ul class="lists">
+    </ul>
+    <div class="card-bottom">
+      <div class="items">
+        <p id="item-no"> 0 items left</p>
+      </div>
+      <div class="states">
+        <p class="all">All</p>
+        <p class="active">Active</p>
+        <p class="completed">Completed</p>
+      </div>
+      <div class="clear">
+        <button class="delete-btn">Clear</button>
+      </div>
+    </div>
+  </div>
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Joy
+    Kirii</a>. </div>
   <script src="index.js"></script>
 </body>
 
