@@ -1,26 +1,19 @@
-'use strict!';
+'use strict';
 
-// Add task btn 
-const addBtn = document.getElementById("add");
-// tasks array 
-let tasks = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"];
-// input field 
-const toDo = document.getElementById("to-do");
+let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"];
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+const ulEl = document.getElementById("ul-el");
 
-function addTask(){
+inputBtn.addEventListener("click", function() {
+  myLeads.push(inputEl.value);
+  console.log(myLeads);
+})
 
-  console.log('Task Added');
-
+// Render the leads in the unordered list using ulEl.textContent
+for (let i = 0; i < myLeads.length; i++) {
+  ulEl.innerHTML += "<li>" + myLeads[i] + "</li>" + "<hr>";
 }
 
-// When add button is clicked it renders out the tasks.
-addBtn.addEventListener("click", function(){
-  tasks.push(toDo.value);
-  console.log(tasks);
-});
 
 
-//For loop to log out items in the tasks array 
-for(let i = 0; i < tasks.length; i++){
-  console.log(tasks[i]);
-}

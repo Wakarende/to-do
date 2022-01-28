@@ -22,76 +22,35 @@
   <!-- Header  -->
   <div class="header">
     <div class="header-content">
-      <div class="header-flex">
-        <h1 class="header-title">TODO</h1>
-        <img src="images/icon-moon.svg" alt="moon-icon" class="moon">
-      </div>
-      <div class="input">
-        <form action="#">
-          <input type="text" id="to-do" class="to-do" placeholder="Add task" onkeypress="handle(event)">
-        </form>
-        <button class="add" id="add">Add</button>
+      <h1 class="header-title">TODO</h1>
+      <div class="div">
+        <input type="text" id="input-el" class="to-do">
+        <button id="input-btn" class="add">ADD</button>
       </div>
     </div>
-    <div class="to-do-list">
-      <div class="card">
-        <div class="card-body">
-          <ul class="lists">
-            <div class="list">
-              <div class="list-flex">
-                <span class="dot"></span>
-                <li>Complete online JS course</li>
-              </div>
-              <hr>
-              <div class="list-flex">
-                <span class="dot"></span>
-                <li>Complete online JS course</li>
-              </div>
-              <hr>
-              <div class="list-flex">
-                <span class="dot"></span>
-                <li>Complete online JS course</li>
-              </div>
-              <hr>
-              <div class="list-flex">
-                <span class="dot"></span>
-                <li>Complete online JS course</li>
-              </div>
-              <hr>
-              <div class="list-flex">
-                <span class="dot"></span>
-                <li>Complete online JS course</li>
-              </div>
-              <hr>
-              <div class="list-flex">
-                <span class="dot"></span>
-                <li>Complete online JS course</li>
-              </div>
-              <hr>
-            </div>
-          </ul>
-          <div class="card-bottom">
-            <div class="items">
-              <a id="item-no" class="item-no">0 items left</a>
-            </div>
-            <div class="states">
-              <a class="all">All</a>
-              <a class="active">Active</a>
-              <a class="completed">Completed</a>
-            </div>
-            <div class="clear">
-              <a class="delete-btn">Clear</a></button>
-            </div>
+  </div>
+  <div class="to-do-list">
+    <div class="card">
+      <div class="card-body">
+        <ul id="ul-el" class="lists"></ul>
+        <hr>
+        <div class="card-bottom">
+          <div class="items">
+            <a href="">5 items left</a>
+          </div>
+          <div class="states">
+            <a href="">All</a>
+            <a href="">Active</a>
+            <a href="">Completed</a>
+          </div>
+          <div class="clear">
+            <a href="">Clear</a>
           </div>
         </div>
       </div>
     </div>
-    <div>
-    </div>
-    <!-- Card  -->
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-center">Frontend Mentor</a>. <a
-      href="#" class="text-center">Joy Kirii</a>.
   </div>
+  <!-- Card  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
