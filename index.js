@@ -28,8 +28,11 @@ function render() {
   // Render the leads in the unordered list using ulEl.textContent
   for (let i = 0; i < myLeads.length; i++) {
   listItems += `
-      <span></span>
-      <li> ${myLeads[i]} </li>
+      <div class="list-flex">
+        <span class="dot"></span>
+        <li> ${myLeads[i]} </li>
+      </div>
+      <hr>
     `; 
   }
 

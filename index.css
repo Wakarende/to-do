@@ -151,6 +151,12 @@ li{
 hr{
   border: 1px solid var(--lightGrayishBlue);
 }
+
+.bottom-btn{
+  border: none;
+  background-color: white;
+  font-size: 14px;
+}
 /* END Card  */
 
 /* MEDIA QUERIES */
