@@ -104,6 +104,19 @@ body{
 .header-title{
   color: white;
 }
+
+.add{
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.add:hover{
+  background-color: white;
+  color: var(--brightBlue);
+}
 /* END Header  */
 
 /* Card  */
@@ -157,6 +170,10 @@ hr{
   background-color: white;
   font-size: 14px;
 }
+
+.bottom-btn:hover{
+  color: var(--brightBlue);
+
 /* END Card  */
 
 /* MEDIA QUERIES */
