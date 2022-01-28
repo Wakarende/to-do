@@ -5,8 +5,10 @@ const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 
-let listsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
-console.log(listsFromLocalStorage);
+const clearAllLists = document.getElementById("clear");
+
+const listsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+
 
 if(listsFromLocalStorage) {
   myLeads = listsFromLocalStorage;
@@ -33,6 +35,17 @@ function render() {
 
   ulEl.innerHTML = listItems;
 };
+
+clearAllLists.addEventListener("click", function(){
+  console.log("Cleared");
+  localStorage.clear();
+  myLeads = [];
+  render();
+});
+
+
+
+
 
 
 
