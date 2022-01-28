@@ -5,6 +5,14 @@ const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 
+let listsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+console.log(listsFromLocalStorage);
+
+if(listsFromLocalStorage) {
+  myLeads = listsFromLocalStorage;
+  render();
+}
+
 
 inputBtn.addEventListener("click", function() {
   myLeads.push(inputEl.value);
